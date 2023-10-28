@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Manrope:wght@200;300;400;600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Open+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&family=Poppins:wght@200;300;500&display=swap');
+
+
+:root{
+    --primary-color:#80E2FF;
+    --secondary-color:#FFD36A;
+    --third-color:#182327;
+    --border-radius:.7rem;
+    --primary-transition: 200ms 15ms linear;
+    font-size: 62.50%;
+    
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 85%;
+    margin: auto;
+
+}
+section{
+    margin-top: 8rem;
+
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2.2rem;
+}
+
+h1, h2, h3{
+    font-family: 'Sentient', serif;
+}
+
+p{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+a{
+text-decoration: none;
+
+}
+
+ul{
+    list-style-type: none;
+}
+/* global set up en here  */
+
+
+
+
+
+/* header start here  */
+
+/* .Top_of_header{
+    background-color: white;
+} */
+.nav_bar_of_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+   
+
+}
+/* .logo_of_header{
+    flex-basis: 10%;
+} */
+
+.nav_bar_of_header {
+    flex-basis: 50%;
+}
+.nav_item_of_header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.nav_item_of_header a{
+    font-size: 1.4rem;
+    color: black;
+    transition: var(--primary-transition);
+    
+    
+}
+.nav_item_of_header a:hover{
+    color: var(--primary-color);
+}
+
+.Search_bar_of_header{
+    height: 4.5rem;
+    width: 35rem;
+    border: .1rem solid #D8E0E2;
+    flex-basis: 25%;
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: var(--border-radius);
+    
+    
+    
+}
+.Search_bar_of_header {
+    font-family: 'Manrope', sans-serif;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    
+    
+}
+.Search_bar_of_header p{
+    font-size: 1.2rem;
+    margin-left: .4rem;
+}
+
+.Account_and_sign_up_of_header{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1.5rem;
+}
+.Account_and_sign_up_of_header i{
+    display: inline-block;
+    padding: 1.4rem 1.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: var(--primary-transition);
+}
+.Account_and_sign_up_of_header i:hover{
+color: var(--primary-color);
+}
+.Account_and_sign_up_of_header p{
+    display: inline-block;
+    padding: 1rem;
+    background-color: black;
+    border-radius: var(--border-radius);
+    color: white;
+    transition: var(--primary-transition);
+}
+.Account_and_sign_up_of_header p:hover{
+    color: var(--primary-color);
+}
+.dropdown_of_header_for_responsive{
+    display: none;
+}
+.Content_of_bottom_0f_header{
+    background: linear-gradient(to bottom, #02B5EA, #02B5EA26)  ;
+    background-repeat: no-repeat;
+  
+}
+.background_picture_of_content_of_bottom_of_header{
+    background-image: url("images/Union.png");
+    background-repeat: no-repeat;
+    background-size: 55rem 50rem;
+    background-position: right 10rem top 6rem;
+    
+}
+.Content_of_bottom_0f_header img{
+    display: inline-block;
+}
+
+.bottom_Of_header{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+    max-width: 85%;
+    margin: auto;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    
+       
+}
+
+.left_of_bottom_of_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 3rem;
+    flex-basis: 50%;
+    
+}
+.left_of_bottom_of_header h1{
+    line-height: 1.1;
+    position: relative;
+}
+.left_of_bottom_of_header h1::after {
+    content: "";
+    background-image: url("images/image\ 18.png");
+    background-size: cover;
+    height: 5.5rem;
+    width: 7.4rem;
+    position: absolute;
+    margin-left: 1rem;
+}
+.left_of_bottom_of_header p{
+    line-height: 1.4;
+    color: black;
+}
+.left_of_bottom_of_header a{
+    height: 5rem;
+    width: 12rem;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+    transition: var(--primary-transition);
+}
+.left_of_bottom_of_header a:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+.right_of_bottom_of_header {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.right_of_bottom_of_header img{
+height: 50rem;
+width: 50rem;
+
+}
+
+/* header end here  */
+
+
+
+
+/* tasty and best chips section start here  */
+
+.tasty_and_best_chips_section h1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15rem;
+    line-height: 1;
+}
+.bottom_of_tasty_and_best_chips_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.left_of_tasty_and_best_chips_section{
+    height: 45rem;
+    width: 55rem;
+    background-color: #FFE9F4;
+    background-image: url("images/Intersect1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.left_of_tasty_and_best_chips_section img{
+    height: 40 rem;
+    width: 35 rem;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: -8rem;
+    left: 8rem;
+    z-index: 1;
+    
+   
+}
+.left_of_tasty_and_best_chips_section::after{
+    content: "";
+    height: 20rem;
+    width: 20rem;
+    background-image: url("images/image\ 35.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+    left: -2rem;
+    top: 14rem;
+    
+    
+}
+
+.right_of_tasty_and_best_chips_section{
+display: flex;
+flex-direction: column;
+justify-content: center;
+justify-content: space-between;
+gap: 2rem;
+position: relative;
+}
+.right_of_tasty_and_best_chips_section::before{
+    content: "";
+    background-image: url("images/image\ 20.png");
+    height: 10rem;
+    width: 25rem;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -15rem;
+    right: -11rem;
+    
+}
+.right_of_tasty_and_best_chips_section img{
+    height: 2rem;
+    width: 12rem;
+}
+.right_of_tasty_and_best_chips_section p{
+    line-height: 1.6;
+
+}
+.bottom_of_right_of_tasty_and_best_chips_section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+.bottom_of_right_of_tasty_and_best_chips_section a{
+    height: 5rem;
+    width: 12rem;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+    transition: var(--primary-transition);
+    position: relative;
+    
+}
+.bottom_of_right_of_tasty_and_best_chips_section a:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+.bottom_of_right_of_tasty_and_best_chips_section h5{
+    font-size: 1.6rem;
+    color: black;
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* tasty and best chips section end here  */
+
+
+
+
+/* find the best test here section start here  */
+.find_the_best_taste_here_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.top_of_find_the_best_taste_here_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 8rem;
+}
+.top_of_find_the_best_taste_here_section p{
+    text-align: center;
+    line-height: 1.4;
+}
+
+.middle_of_find_the_best_taste_here_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+    column-gap: 2.5rem;
+}
+.box_of_middle_of_find_the_best_taste_here_section{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 12rem;
+}
+.top_of_box_of_middle_of_find_the_best_taste_here_section{
+    width: 35rem;
+    height: 30rem;
+    background-color: #FFE9F4;
+    background-image: url("images/Intersect1.png");
+    background-size: cover;
+    position: relative;
+    border-radius: var(--border-radius);
+}
+.top_of_box_of_middle_of_find_the_best_taste_here_section img{
+    position: absolute;
+    top: -6rem;
+    left: 2rem;
+}
+.top_of_box_of_middle_of_find_the_best_taste_here_section i{
+    position: absolute;
+    bottom: -2rem;
+    right: 2rem;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: white;
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.bottom_of_box_of_middle_of_find_the_best_taste_here_section{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.bottom_of_box_of_middle_of_find_the_best_taste_here_section img{
+    height: 2rem;
+    width: 12rem;
+}
+.bottom_of_find_the_best_taste_here_section{
+    margin-top: -09rem;
+}
+.bottom_of_find_the_best_taste_here_section a{
+    height: 5rem;
+    width: 12rem;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+    transition: var(--primary-transition);
+}
+
+.bottom_of_find_the_best_taste_here_section a:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+/* find the best test here section end here  */
+
+
+
+
+/* our popular crisps section start here  */
+.our_popular_crisps_section{
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.Top_Of_our_popular_crisps{
+    display: flex;
+    justify-content: center;
+    
+}
+.Top_Of_our_popular_crisps h2{
+    margin-left: 35.5rem;
+    margin-bottom: 4rem;
+}
+.middle_Of_our_popular_crisps{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.left_of_middle_of_our_popular_crisps{
+    height: 45rem;
+    width: 55rem;
+    background-color: #EAFFFC;
+    background-image: url("images/Intersect.png");
+    background-size: cover;
+    position: relative;
+}
+.left_of_middle_of_our_popular_crisps img{
+    position: absolute;
+    left: 10rem;
+    bottom: 5rem;
+
+}
+.left_of_middle_of_our_popular_crisps h4{
+    position: absolute;
+    bottom: -5rem;
+}
+.left_of_middle_of_our_popular_crisps i{
+    position: absolute;
+    bottom: -8rem;
+    font-size: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.left_of_middle_of_our_popular_crisps span{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.right_of_middle_of_our_popular_crisps{
+    height: 35rem;
+    width: 55rem;
+    background-color: #FFEAEC;
+    background-image: url("images/Intersect1.png");
+    background-size: cover;
+    position: relative;
+    
+}
+.right_of_middle_of_our_popular_crisps img{
+    position: absolute;
+    left: 14rem;
+    bottom: 5rem;
+    height:35rem;
+    
+}
+.right_of_middle_of_our_popular_crisps h4{
+    position: absolute;
+    bottom: -5rem;
+}
+.right_of_middle_of_our_popular_crisps i{
+    position: absolute;
+    bottom: -8rem;
+    font-size: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.right_of_middle_of_our_popular_crisps span{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.bottom_Of_our_popular_crisps {
+    display: flex;
+    gap: 1rem;
+
+}
+.bottom_Of_our_popular_crisps div{
+    width: 4rem;
+    height: .6rem;
+    background-color: #D5DDDF;
+    margin-top: 15rem;
+    border-radius: var(--border-radius);
+}
+.bottom_Of_our_popular_crisps div:nth-child(even){
+    background-color: black;
+}
+
+/* our popular crisps section end here  */
+
+
+
+
+/* what Our Customer say section start here  */
+.What_our_customers_say_section{
+    max-width: 100%;
+    background-color: var(--primary-color);
+    
+   
+   
+}
+.What_our_customer_say{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8rem 0rem;
+}
+.left_our_customers_say_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.left_our_customers_say_section h4{
+    margin-top: 6rem;
+    position: relative;
+}
+.left_our_customers_say_section h4::before{
+    content: "";
+    height: .2rem;
+    width: 45rem;
+    background-color: #33D1FF;
+    position: absolute;
+    top: -4rem;
+}
+.left_our_customers_say_section h6{
+    margin-top: -3rem;
+    font-size: 1.2rem;
+    font-weight: lighter;
+  
+}
+.arrow_of_left_our_customer_say{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    margin-top: -7.4rem;
+}
+.left_our_customers_say_section i{
+    position: relative;
+    border: .1rem solid gray;
+    padding: 1.5rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    
+}
+.right_our_customers_say_section{
+    height: 40rem;
+    width: 45rem;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    background-image: url("images/Union101.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.right_our_customers_say_section img{
+    position: absolute;
+    height: 110%;
+    width: 80%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 4rem;
+    margin: auto;
+}
+/* what Our Customer say section end here  */
+
+
+
+
+
+/* Find a Crisps Store Near You strt here  */
+.Find_a_crisps_store_near_you_section{
+    background-image:  url("images/image\ 20.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: -8rem;
+    
+    
+    
+}
+.content_of_find_a_crisps_store_near_you_section{
+    height: 50rem;
+    width: 100%;
+    background-color: #ffd26ae0;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.content_of_find_a_crisps_store_near_you_section h1{
+    text-align: center;
+    line-height: 1.2;
+}
+.content_of_find_a_crisps_store_near_you_section p{
+    text-align: center;
+}
+.content_of_find_a_crisps_store_near_you_section a{
+    height: 5rem;
+    width: 12rem;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+    transition: var(--primary-transition);
+    margin-top: 1.5rem;
+}
+.content_of_find_a_crisps_store_near_you_section a:hover{
+    color: var(--primary-color);
+}
+/* Find a Crisps Store Near You end here  */
+
+
+
+
+/* footer start here  */
+.footer_section{
+    background-color: #FFF7E3;
+}
+.content_of_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8rem 0rem;
+    
+}
+.left_of_footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.left_of_footer img{
+    height: 5rem;
+    width: 5rem;
+
+}
+.left_of_footer ul{
+    display: flex;
+    gap: 2rem;
+
+}
+.left_of_footer ul li a{
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+}
+.left_of_footer p{
+    margin-top: 2rem;
+}
+.social_media_icon_of_left_of_footer{
+    display: flex;
+    gap: 2rem;
+    
+}
+.social_media_icon_of_left_of_footer i{
+    font-size: 1.4rem;
+    background-color: black;
+    padding: 1.4rem 1.6rem;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--primary-transition);
+}
+.social_media_icon_of_left_of_footer i:hover{
+    color: var(--primary-color);
+}
+.right_of_footer{
+    height: 50rem;
+    width: 60rem;
+    background-color: #DDF6FF;
+    background-image: url("images/Union.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.first_image_of_right_of_footer img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.second_image_of_right_of_footer img{
+    position: absolute;
+    left: 3rem;
+    top: 10rem;
+}
+.third_image_of_right_of_footer img{
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    right: 12rem;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(290deg);
+    z-index: 1;
+}
+.fourth_image_of_right_of_footer img{
+    position: absolute;
+    top: 0;
+    left: 14rem;
+    right: 0rem;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(10deg);
+}
+.fifth_image_of_right_of_footer img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+.sixth_image_of_right_of_footer img{
+    position: absolute;
+    bottom: 8rem;
+    left: 4rem;
+  
+}
+/* footer end here  */
+
+
+
+
+
+
+
